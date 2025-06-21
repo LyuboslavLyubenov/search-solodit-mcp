@@ -1,10 +1,14 @@
 {
-  "name": "search-solodit-mcp",
+  "name": "@lyuboslavlyubenov/solodit-mcp",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/ndex.js",
+  "main": "dist/index.js",
+  "bin": {
+    "solodit-mcp": "bin/cli.js"
+  },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [],
   "author": "",
