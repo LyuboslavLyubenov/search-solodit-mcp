@@ -2,11 +2,25 @@
 
 A Model Context Protocol (MCP) server for searching and retrieving Solodit vulnerability reports.
 
+[](./solodit-mcp.mp4)
+
 ## Features
 - Search vulnerability reports by keywords
 - Get full report content
 
 ## Setup
+
+Easiest way is to start the server with `npx` or with docker:
+```shell
+npx solodit-mcp
+```
+or with remote docker:
+```shell
+docker run -p 3000:3000 lyuboslavl/solodit-mcp:latest
+```
+
+
+## Local setup
 
 ### Using Docker
 1. Build the image:
@@ -18,7 +32,7 @@ docker build -t solodit-mcp .
 docker run -p 3000:3000 solodit-mcp
 ```
 
-### Local Setup
+### Local build
 1. Install dependencies:
 ```shell
 npm install -g pnpm && pnpm install
@@ -27,18 +41,6 @@ npm install -g pnpm && pnpm install
 ```shell
 pnpm build && node dist/index.js
 ```
-
-## API Usage
-The server exposes an MCP endpoint at `POST /mcp` with these tools:
-
-1. **Search Tool** (`search`):
-- Input: `{ "keywords": "your search terms" }`
-- Returns: JSON array of matching report titles
-
-2. **Get by Title** (`get-by-title`):
-- Input: `{ "title": "exact report title" }`
-- Returns: Full content of the matching report
-
 
 ## IDE Integration
 Add this to your `mcp.json` configuration file:
@@ -51,3 +53,14 @@ Add this to your `mcp.json` configuration file:
   }
 }
 ```
+
+## API Usage
+The server exposes an MCP endpoint at `POST /mcp` with these tools:
+
+1. **Search Tool** (`search`):
+- Input: `{ "keywords": "your search terms" }`
+- Returns: JSON array of matching report titles
+
+2. **Get by Title** (`get-by-title`):
+- Input: `{ "title": "exact report title" }`
+- Returns: Full content of the matching report
