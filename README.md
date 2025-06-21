@@ -2,7 +2,7 @@
 
 A Model Context Protocol (MCP) server for searching and retrieving Solodit vulnerability reports.
 
-[](./solodit-mcp.webm)
+[](./solodit-mcp.gif)
 
 ## Features
 - Search vulnerability reports by keywords
