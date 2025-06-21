@@ -12,13 +12,12 @@ https://github.com/user-attachments/assets/057ca6a2-8ca2-400c-b92b-9ed585ae2e79
 
 Easiest way is to start the server with `npx` or with docker:
 ```shell
-npx solodit-mcp
+npx @lyuboslavlyubenov/solodit-mcp
 ```
 or with remote docker:
 ```shell
 docker run -p 3000:3000 lyuboslavl/solodit-mcp:latest
 ```
-
 
 ## Local setup
 
