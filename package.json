@@ -1,0 +1,22 @@
+{
+  "name": "search-solodit-mcp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/ndex.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.3",
+    "express": "^5.1.0",
+    "typescript": "^5.8.3",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.3"
+  }
+}
