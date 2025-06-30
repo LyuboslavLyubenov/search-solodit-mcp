@@ -32,7 +32,6 @@ export default function register(server: McpServer) {
         slug: f.slug,
       }));
       const findingsJSON = JSON.stringify(findingsContentShort);
-      console.log(findingsJSON);
       return {
         structuredContent: {
           reportsJSON: findingsJSON,
