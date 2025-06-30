@@ -12,9 +12,12 @@ export default async function getFinding(slug: string) {
         'accept': '*/*',
         'cache-control': 'no-cache',
         'content-type': 'application/json',
+        'referer': 'https://solodit.cyfrin.io/',
+        'origin': 'https://solodit.cyfrin.io',
         'sec-fetch-dest': 'empty',
         'sec-fetch-mode': 'cors',
-        'sec-fetch-site': 'same-origin'
+        'sec-fetch-site': 'same-origin',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
       }
     });
 
