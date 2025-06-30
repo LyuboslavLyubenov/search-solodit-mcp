@@ -9,23 +9,23 @@ importers:
   .:
     dependencies:
       '@modelcontextprotocol/sdk':
-        specifier: ^1.12.3
+        specifier: 1.12.3
         version: 1.12.3
       express:
-        specifier: ^5.1.0
+        specifier: 5.1.0
         version: 5.1.0
       typescript:
-        specifier: ^5.8.3
+        specifier: 5.8.3
         version: 5.8.3
       zod:
-        specifier: ^3.25.67
+        specifier: 3.25.67
         version: 3.25.67
     devDependencies:
       '@types/express':
-        specifier: ^5.0.3
+        specifier: 5.0.3
         version: 5.0.3
       '@types/node':
-        specifier: ^24.0.3
+        specifier: 24.0.3
         version: 24.0.3
 
 packages:
